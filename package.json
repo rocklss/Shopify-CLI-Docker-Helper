@@ -1,0 +1,13 @@
+{
+  "name": "docker-helper",
+  "version": "1.0.0",
+  "description": "Helper script to run Docker containers",
+  "scripts": {
+    "docker-build": "docker build -t shopify-cli-image .",
+    "docker-run": "docker run -it --rm --name shopify-cli-image -v $(pwd):/workspace -v ~/.ssh:/root/.ssh -p 9292:9292 shopify-cli-image",
+    "docker-exec": "docker exec -it shopify-cli-image bash",
+    "theme-dev": "shopify theme dev --host=0.0.0.0"
+  },
+  "author": "Chiennv",
+  "license": "MIT"
+}
