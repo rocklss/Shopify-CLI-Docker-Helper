@@ -69,7 +69,7 @@ npm run docker-exec
 Run the following command to start the Shopify theme preview:
 
 ```bash
-npm run theme-dev
+npm run dev
 ```
 
 - The Shopify theme preview will be accessible at [http://127.0.0.1:9292](http://127.0.0.1:9292/).
@@ -97,7 +97,7 @@ Copy code
 | `docker-build` | Builds the Docker image with the name `shopify-cli-image`. |
 | `docker-run` | Runs the Docker container interactively, mounting current directory and SSH keys, and exposing port `9292`. |
 | `docker-exec` | Opens a new terminal session in the running container. |
-| `theme-dev` | Starts Shopify theme development server inside the container. |
+| `dev` | Starts Shopify theme development server inside the container. |
 
 ---
 
